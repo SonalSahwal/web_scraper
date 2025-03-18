@@ -12,10 +12,16 @@ driver.get(URL)
 #the browser will close authomaticlaly
 time.sleep(10)
 
+# automatic scroll
+height=0
+for i in range(15):
+    height = height+500
+    driver.execute_script(f"window.scrollTo(0, {height});")
+    time.sleep(1)
+
 # get URL of the image
 images_tag = driver.find_elements(By.XPATH, "//img[@class='tzC2N fbGdz cnmNG']")
 images_urls = [img.get_attribute('src') for img in images_tag]
-
 
 # download images
 for index,url in enumerate(images_urls[:10]):
@@ -28,3 +34,6 @@ for index,url in enumerate(images_urls[:10]):
 
 #quit browser
 driver.close()
+
+#why use request instead of selenium?
+# because requests is very fast as compared to selenium
