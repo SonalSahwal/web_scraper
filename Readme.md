@@ -1,4 +1,4 @@
-# Unsplash Image Downloader with Selenium
+# Download Unsplash Images with Selenium
 
 This Python project uses Selenium to scroll through Unsplash and download images without compromising the quality of the images.
 
@@ -16,7 +16,7 @@ Before running the script, ensure you have the following installed:
 
 1.  **Cloning the Repository:**
     ```bash
-    git clone <rhttps://github.com/SonalSahwal/web_scraper>
+    git clone https://github.com/SonalSahwal/web_scraper
     cd unsplash_scraper
     ```
 
@@ -28,4 +28,3 @@ Before running the script, ensure you have the following installed:
 3.  **Images Downloaded:**
     * The script will download the first 10 images found after scrolling and save them as `img-1.jpg`, `img-2.jpg`, etc., in the same directory as the script.
 
-## File Structure
